@@ -1,0 +1,22 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+  </head>
+  <body>
+    <h1>Registration Form</h1>
+    <div class="col-md-6">
+     
+        <form (submit)="register($event)" class="form-group">
+            <input type="text" placeholder="enter the first  name" class="form-control" id="fname" required><br>
+            <input type="text" placeholder="enter the last name" class="form-control" id="lname"required><br>
+            <input type="email" placeholder="enter the emailid" class="form-control" id="email"required><br>
+            
+            <input type="date" placeholder="D.O.B" class="form-control" id="dob" required><br>
+            <input type="password" placeholder="enter the password" class="form-control" id="password" required><br>
+            <button class="btn btn-success pull-right" ><a routerLink="/login"> Submit</a></button>
+            <a [routerLink]="['/login']" class="btn btn-link pull-right">Login</a>
+          </form>
+    </div>
+  </body>
+  
+</html>

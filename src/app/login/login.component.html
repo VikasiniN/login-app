@@ -1,0 +1,18 @@
+<html>
+  <head>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
+  </head>
+  <body>
+    <h1>Login Form</h1>
+  
+    <div class="col-md-6">
+     
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()" >
+            <input type="email" placeholder="enter the  email id" class="form-control" id="email" required><br>
+            <input type="password" placeholder="enter the password" class="form-control" id="password"required><br>
+            <a [routerLink]="['/details']" class="btn btn-link">submit</a>
+          </form>
+    </div>
+  </body>
+  
+</html>
