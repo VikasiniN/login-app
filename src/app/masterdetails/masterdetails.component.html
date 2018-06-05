@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Details </title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
-</head>
-<body>
+
+    <div class="container">
   <h1>Master Details</h1>
   <table border="2" class="table table-hover">
 <tr>
   <th>FirstName</th>
   <th>LastName</th>
-  <th>email</th>
-  <th>password</th>
   <th>D.O.B</th>
+  <th>email</th>
+  <th>password </th>
 </tr>
 <tr *ngFor="let data of details">
   <td>{{data.firstname}}</td>
@@ -26,5 +18,4 @@
 </tr>
 
   </table>
-</body>
-</html>
+  </div>

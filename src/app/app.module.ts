@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegistrationComponent } from './registration/registration.component';
 import { MasterdetailsComponent } from './masterdetails/masterdetails.component';
+import { FormsModule } from '@angular/forms';
+import {InsertService} from './insert.service'
 
 
 @NgModule({
@@ -19,6 +21,7 @@ import { MasterdetailsComponent } from './masterdetails/masterdetails.component'
   imports: [
     BrowserModule,
     HttpClientModule,
+    FormsModule,
     RouterModule.forRoot(
 
     [{
@@ -27,7 +30,7 @@ import { MasterdetailsComponent } from './masterdetails/masterdetails.component'
 
     },
     {
-      path:'registration',
+      path:'',
       component:RegistrationComponent
 
     },

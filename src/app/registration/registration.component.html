@@ -1,22 +1,26 @@
-<html>
-  <head>
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css" />
-  </head>
-  <body>
+
     <h1>Registration Form</h1>
-    <div class="col-md-6">
-     
-        <form (submit)="register($event)" class="form-group">
-            <input type="text" placeholder="enter the first  name" class="form-control" id="fname" required><br>
-            <input type="text" placeholder="enter the last name" class="form-control" id="lname"required><br>
-            <input type="email" placeholder="enter the emailid" class="form-control" id="email"required><br>
-            
-            <input type="date" placeholder="D.O.B" class="form-control" id="dob" required><br>
-            <input type="password" placeholder="enter the password" class="form-control" id="password" required><br>
-            <button class="btn btn-success pull-right" ><a routerLink="/login"> Submit</a></button>
-            <a [routerLink]="['/login']" class="btn btn-link pull-right">Login</a>
-          </form>
+    <div class="jumbotron"> 
+    <form (submit)="register($event)" class="form-group" validate>
+            <div class="col-md-8 offset-md-2">
+                <input type="text" placeholder="enter the first  name" class="form-control" id="fname" required><br>
+            </div>
+            <div class="col-md-8 offset-md-2">
+            <input type="text" placeholder="enter the last name" class="form-control" id="lname" required><br>
+           </div>
+           <div class="col-md-8 offset-md-2">
+           <input type="email" placeholder="enter the emailid" class="form-control" id="email"required><br>
+       </div>
+        <div class="col-md-8 offset-md-2">
+              <input type="date" placeholder="D.O.B" class="form-control" id="dob" required><br>
+            </div>
+            <div class="col-md-8 offset-md-2"> 
+                <input type="password" placeholder="enter the password" class="form-control" id="password" required><br>
+            </div>
+            <div class="col-md-8 offset-md-2">
+            <button class="btn btn-success " ><a routerLink="/login"> Submit</a></button>
+             <a [routerLink]="['/login']" class="btn btn-link" >Login</a>
+          </div> 
+         </form>
     </div>
-  </body>
   
-</html>

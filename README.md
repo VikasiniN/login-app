@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # Loginapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.7.
@@ -30,3 +31,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 # Login-app-
 I created a login app in angular 6.the data will be displayed in console window
 >>>>>>> c56a2c76b881b33664355166789dc9886b698161
+=======
+# login-app
+>>>>>>> aae9abae8ca08c6c2121def7b1d9edce02882f52

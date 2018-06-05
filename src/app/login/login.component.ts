@@ -1,6 +1,6 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { AuthService } from '../auth.service';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 import { } from '../registration';
 import { NgIf } from '@angular/common';
  
